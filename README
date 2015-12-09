@@ -1,0 +1,26 @@
+Application Name  : Simple Registration System with Email Verification
+Author/Developer  : Arem G. Aguinaldo
+Developer's Email : ayhem30@gmail.com
+Cellphone Number  : +639353689157
+Date Developed    : November 16, 2015
+
+/** MAIN APPLICATION CONFIGURATION **/
+    1. Configuration File: "{application_path}/config/config.php"
+        'db' => array(
+            'host'     => 'localhost',    // database host
+            'username' => 'root',         // database username
+            'password' => 'pass',         // database password
+            'schema'   => 'registration', // schema/database name
+        ),
+
+        // Application URL and environment
+        'app' => array(
+            'environment' => 'development',                   // environment [development,staging,production] for Error Reporting
+            'path'        => 'http://localhost/registration', // application base url
+        ),
+    2. Make sure that the "{application_path}/data/logs" AND "{application_path}/data/uploads" is writable
+/** END OF MAIN APPLICATION **/
+
+/** DATABASE CONFIGURATION **/
+    1. Import "{application_path}/data/db/registration.sql" to your database and your DONE.
+/** **/

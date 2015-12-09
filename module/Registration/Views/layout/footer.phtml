@@ -1,0 +1,23 @@
+    <!-- Javascript -->
+    <script type="text/javascript">
+        var base_url = '<?=$html->getBaseUrl()?>';
+        head.load(
+            "<?=$html->getBaseUrl() . '/js/jquery-1.11.1.min.js';?>",
+            "<?=$html->getBaseUrl() . '/js/bootstrap.min.js';?>",
+            "<?=$html->getBaseUrl() . '/js/jquery.backstretch.min.js';?>",
+            "<?=$html->getBaseUrl() . '/js/retina-1.1.0.min.js';?>",
+            "<?=$html->getBaseUrl() . '/js/jquery.validate.min.js';?>",
+            "<?=$html->getBaseUrl() . '/js/jquery-birthday-picker.min.js';?>",
+            "<?=$html->getBaseUrl() . '/js/scripts.js';?>"
+        );
+    </script>
+
+    <!--[if lt IE 10]>
+        <script type="text/javascript">
+            head.load("<?=$html->getBaseUrl() . '/js/placeholder.js';?>");
+        </script>
+    <![endif]-->
+
+    </body>
+
+</html>
